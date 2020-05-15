@@ -28,7 +28,7 @@ public final class FlutterCompassPlugin implements StreamHandler {
 
     public static void registerWith(Registrar registrar) {
         EventChannel channel = new EventChannel(registrar.messenger(), "hemanthraj/flutter_compass");
-        channel.setStreamHandler(new FlutterCompassPlugin(registrar.context(), Sensor.TYPE_ROTATION_VECTOR));
+        channel.setStreamHandler(new FlutterCompassPlugin(registrar.context(), Sensor.TYPE_GEOMAGNETIC_ROTATION_VECTOR));
     }
 
 
